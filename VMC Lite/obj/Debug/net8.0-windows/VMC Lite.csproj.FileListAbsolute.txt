@@ -1,0 +1,30 @@
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\VMC Lite.exe
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\VMC Lite.dll.config
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\VMC Lite.deps.json
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\VMC Lite.runtimeconfig.json
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\VMC Lite.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\VMC Lite.pdb
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\HidLibrary.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\System.Management.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.csproj.AssemblyReference.cache
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\ETS2Tools.g.cs
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\App.g.cs
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite_MarkupCompile.cache
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite_MarkupCompile.lref
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\ETS2Tools.baml
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\MainWindow.baml
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.g.resources
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.AssemblyInfoInputs.cache
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.AssemblyInfo.cs
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.csproj.CoreCompileInputs.cache
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.csproj.Up2Date
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\refint\VMC Lite.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.pdb
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite.genruntimeconfig.cache
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\ref\VMC Lite.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Debug\net8.0-windows\HidSharp.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\obj\Debug\net8.0-windows\VMC Lite_Content.g.cs

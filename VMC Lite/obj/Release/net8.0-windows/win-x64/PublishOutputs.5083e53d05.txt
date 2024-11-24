@@ -1,0 +1,2 @@
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\VMC Lite.pdb
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\VMC Lite.exe

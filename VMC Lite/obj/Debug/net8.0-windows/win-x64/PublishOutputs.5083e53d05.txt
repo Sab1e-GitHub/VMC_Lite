@@ -1,0 +1,8 @@
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\VMC Lite.pdb
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\VMC Lite.dll.config
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\D3DCompiler_47_cor3.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\PenImc_cor3.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\PresentationNative_cor3.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\vcruntime140_cor3.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\wpfgfx_cor3.dll
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\publish\VMC Lite.exe

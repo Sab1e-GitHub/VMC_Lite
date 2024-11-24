@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VMC Lite", "VMC Lite\VMC Lite.csproj", "{30501817-BA90-4796-80D7-C6AC46F6FC5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Debug|x64.ActiveCfg = Debug|x64
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Debug|x64.Build.0 = Debug|x64
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Release|x64.ActiveCfg = Release|x64
+		{30501817-BA90-4796-80D7-C6AC46F6FC5D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F82A43B0-CFB7-44F5-9DC7-0FD6223063FD}
+	EndGlobalSection
+EndGlobal

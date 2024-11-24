@@ -1,0 +1,2 @@
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Release\net8.0-windows\win-x64\publish\win-x64\VMC Lite.pdb
+D:\WorkSpace\VISUALSTUDIO\VMC Lite\VMC Lite\bin\Release\net8.0-windows\win-x64\publish\win-x64\VMC Lite.exe

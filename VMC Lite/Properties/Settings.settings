@@ -1,0 +1,90 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VMC_Lite.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Steering_Wheel_Rotation_Range" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="Encoder_Pulse" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="Accelerator_Pedal_Maximum" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">4095</Value>
+    </Setting>
+    <Setting Name="Accelerator_Pedal_Minimum" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Brake_Pedal_Maximum" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">4095</Value>
+    </Setting>
+    <Setting Name="Brake_Pedal_Minimum" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Clutch_Pedal_Maximum" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">4095</Value>
+    </Setting>
+    <Setting Name="Effect_Gain_Controller_Spring_Gain" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="Effect_Gain_Controller_Damper_Gain" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="Effect_Gain_Controller_Friction_Gain" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="Effect_Gain_Controller_Inertia_Gain" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="Effect_Limiter_Inertia_Limiter" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="Effect_Spring_PID_Kp" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="Effect_Spring_PID_Ki" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="Effect_Spring_PID_Kd" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Steering_Wheel_Software_Limiter_Kp" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="Steering_Wheel_Software_Limiter_Ki" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Steering_Wheel_Software_Limiter_Kd" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PWM_Gain_Multiple_Value" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Clutch_Pedal_Minimum" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Led_Brightness" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="Led_Mode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Led_Game_Mode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Led_Color_Mode_Color_String" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#000000</Value>
+    </Setting>
+    <Setting Name="Joystick_1_Deadzone" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Joystick_2_Deadzone" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Joystick_1_MaxValue" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">32767</Value>
+    </Setting>
+    <Setting Name="Joystick_2_MaxValue" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">32767</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
