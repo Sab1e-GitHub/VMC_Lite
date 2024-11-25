@@ -358,5 +358,29 @@ namespace VMC_Lite.Properties {
                 this["Joystick_2_MaxValue"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Steering_Wheel_Vibration_Feedback_Enabled {
+            get {
+                return ((bool)(this["Steering_Wheel_Vibration_Feedback_Enabled"]));
+            }
+            set {
+                this["Steering_Wheel_Vibration_Feedback_Enabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        public ushort Steering_Wheel_Vibration_Feedback_Delay {
+            get {
+                return ((ushort)(this["Steering_Wheel_Vibration_Feedback_Delay"]));
+            }
+            set {
+                this["Steering_Wheel_Vibration_Feedback_Delay"] = value;
+            }
+        }
     }
 }

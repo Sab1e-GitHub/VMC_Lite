@@ -86,5 +86,11 @@
     <Setting Name="Joystick_2_MaxValue" Type="System.UInt16" Scope="User">
       <Value Profile="(Default)">32767</Value>
     </Setting>
+    <Setting Name="Steering_Wheel_Vibration_Feedback_Enabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Steering_Wheel_Vibration_Feedback_Delay" Type="System.UInt16" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

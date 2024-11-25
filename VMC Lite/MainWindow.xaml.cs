@@ -11,7 +11,7 @@ namespace VMC_Lite
     /// </summary>
     public partial class MainWindow : Window
     {
-        public const string SoftwareVersion = "1.2";
+        public const string SoftwareVersion = "1.3";
         private int _currentAngle = 0;
         private VMCBLEGamepadDevice _vmcBleGamepadDevice = VMCBLEGamepadDevice.Instance;
         private VMCMainDevice _vmcMainDevice = VMCMainDevice.Instance;
@@ -256,10 +256,8 @@ namespace VMC_Lite
             {
                 if (!_vmcMainDevice.Initialized)    //如果设备没有初始化，就初始化
                 {
-                    _vmcMainDevice.hidMangager.SendOutputReport(0x0B, [0x08]);
-                    _vmcMainDevice.hidMangager.SendOutputReport(0x0B, [0x04]);
-                    _vmcMainDevice.hidMangager.SendOutputReport(0x0B, [0x01]);
-                    //TODO 如果游戏打开，可能会导致发送的报告冲突从而导致单片机卡死
+                    // 仅开启执行器
+                    _vmcMainDevice.hidMangager.SendOutputReport(VMCMainDevice.ReportId.PID_DEVICE_CONTROL_REPORT_ID, [0x01]);
                     if (IsWindowActive())  //只有当窗口有焦点时才开始读取Input
                     {
                         Debug.WriteLine("窗口有焦点");
@@ -484,7 +482,8 @@ namespace VMC_Lite
             SetJoystick2MaxValueSlider.Value = Properties.Settings.Default.Joystick_2_MaxValue;
             SetJoystick2MaxValueTextblock.Text = Properties.Settings.Default.Joystick_2_MaxValue.ToString();
 
-
+            EnableVibrationFeedbackCheckBox.IsChecked = Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Enabled;
+            VibrationFeedbackDelayTextBox.Text = Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Delay.ToString();
         }
 
 
@@ -1439,5 +1438,67 @@ namespace VMC_Lite
             }
         }
 
+        private void EnableVibrationFeedbackCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Enabled = true;
+            Properties.Settings.Default.Save();
+            if (_vmcMainDevice.SendVMCCommand(
+                VMCMainDevice.VMCCommandType.cmd_steering_wheel_software_limiter_set_vibration_feedback_enable,
+                Convert.ToByte(VMCMainDevice.SLVibrationFeedbackType.SL_Vibration_Feedback_CONSTANT)))
+            {
+                ShowOperationStatus(true);
+            }
+            else
+            {
+                ShowOperationStatus(false);
+            }
+        }
+
+        private void EnableVibrationFeedbackCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Enabled = false;
+            Properties.Settings.Default.Save();
+            if (_vmcMainDevice.SendVMCCommand(
+                VMCMainDevice.VMCCommandType.cmd_steering_wheel_software_limiter_set_vibration_feedback_enable,
+                Convert.ToByte(VMCMainDevice.SLVibrationFeedbackType.SL_Vibration_Feedback_OFF)))
+            {
+                ShowOperationStatus(true);
+            }
+            else
+            {
+                ShowOperationStatus(false);
+            }
+        }
+
+        private void VibrationFeedbackDelayTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            // 允许的数字键（主键盘0-9）和小键盘的数字键
+            bool isNumberKey = (e.Key >= Key.D0 && e.Key <= Key.D9) || (e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9);
+
+            // 允许的控制键，如退格键、删除键、方向键等
+            bool isControlKey = e.Key == Key.Back || e.Key == Key.Delete || e.Key == Key.Left || e.Key == Key.Right;
+
+            // 允许回车键用于确认
+            if (e.Key == Key.Enter)
+            {
+                var text = VibrationFeedbackDelayTextBox.Text;
+                try
+                {
+
+                    var value = Convert.ToUInt16(text);
+                    Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Delay = value;
+                    Properties.Settings.Default.Save();
+                    _vmcMainDevice.SendVMCCommand(VMCMainDevice.VMCCommandType.cmd_steering_wheel_software_limiter_set_vibration_feedback_delay, value);
+                    ShowOperationStatus("设置值： " + text + " - 成功");
+                }
+                catch
+                {
+                    ShowOperationStatus("设置值： " + text + " - 失败 - 输入范围 0~65535");
+                }
+            }
+
+            // 如果不是数字键或控制键，则阻止输入
+            e.Handled = !(isNumberKey || isControlKey);
+        }
     }
 }

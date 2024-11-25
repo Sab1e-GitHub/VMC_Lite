@@ -48,27 +48,29 @@ namespace VMC_Lite
             public enum VMCCommandType
             {
                 cmd_unknown_command,
-                cmd_steering_wheel_set_center,
-                cmd_steering_wheel_set_rotation_range,
-                cmd_steering_wheel_encoder_set_pulse,
-                cmd_accelerator_pedal_set_maximum,
-                cmd_accelerator_pedal_set_minimum,
-                cmd_brake_pedal_set_maximum,
-                cmd_brake_pedal_set_minimum,
-                cmd_clutch_pedal_set_maximum,
-                cmd_clutch_pedal_set_minimum,
-                cmd_effect_gain_controller_set_spring_gain,
-                cmd_effect_gain_controller_set_damper_gain,
-                cmd_effect_gain_controller_set_friction_gain,
-                cmd_effect_gain_controller_set_inertia_gain,
-                cmd_effect_limiter_set_inertia_limiter,
-                cmd_effect_set_spring_kp,
-                cmd_effect_set_spring_ki,
-                cmd_effect_set_spring_kd,
-                cmd_steering_wheel_software_limiter_set_kp,
-                cmd_steering_wheel_software_limiter_set_ki,
-                cmd_steering_wheel_software_limiter_set_kd,
-                cmd_pwm_global_parameters_set_pwm_gain_multiple
+                cmd_steering_wheel_set_center,                          // 设置当前角度为中心
+                cmd_steering_wheel_set_rotation_range,      // 设置方向盘最大旋转角度，正向+反向
+                cmd_steering_wheel_encoder_set_pulse,           // 设置编码器脉冲
+                cmd_accelerator_pedal_set_maximum,          // 设置当前值为加速踏板的最大值
+                cmd_accelerator_pedal_set_minimum,              // 设置当前值为加速踏板的最小值
+                cmd_brake_pedal_set_maximum,                        // 设置当前值为刹车踏板的最大值
+                cmd_brake_pedal_set_minimum,                        // 设置当前值为刹车踏板的最小值
+                cmd_clutch_pedal_set_maximum,                       // 设置当前值为离合器踏板的最大值
+                cmd_clutch_pedal_set_minimum,                       // 设置当前值为离合器踏板的最小值
+                cmd_effect_gain_controller_set_spring_gain,         // 设置力反馈效果 - Spring效果的增益
+                cmd_effect_gain_controller_set_damper_gain,     // 设置力反馈效果 - Damper效果的增益
+                cmd_effect_gain_controller_set_friction_gain,       // 设置力反馈效果 - Friction弹簧效果的增益
+                cmd_effect_gain_controller_set_inertia_gain,            // 设置力反馈效果 - Inertia效果的增益
+                cmd_effect_limiter_set_inertia_limiter,                     // 设置力反馈效果 - Inertia效果的限位
+                cmd_effect_set_spring_kp,       // 设置力反馈效果 - Spring PID的Kp
+                cmd_effect_set_spring_ki,       // 设置力反馈效果 - Spring PID的Ki
+                cmd_effect_set_spring_kd,       // 设置力反馈效果 - Spring PID的Kd
+                cmd_steering_wheel_software_limiter_set_kp, // 设置方向盘软限位 PID 的Kp
+                cmd_steering_wheel_software_limiter_set_ki, // 设置方向盘软限位 PID 的Ki
+                cmd_steering_wheel_software_limiter_set_kd, // 设置方向盘软限位 PID 的Kd
+                cmd_pwm_global_parameters_set_pwm_gain_multiple,        // 设置力反馈输出PWM的增益倍数
+                cmd_steering_wheel_software_limiter_set_vibration_feedback_enable,      // 设置方向盘软限位的震动反馈使能
+                cmd_steering_wheel_software_limiter_set_vibration_feedback_delay			// 设置方向盘软限位的震动反馈
             }
             public enum VMCRespondingType
             {
@@ -80,20 +82,35 @@ namespace VMC_Lite
                 resp_clutch_pedal_maximum,
                 resp_clutch_pedal_minimum
             }
-
-
+            /// <summary>
+            /// 软限位震动反馈类型
+            /// </summary>
+            public enum SLVibrationFeedbackType
+            {
+                SL_Vibration_Feedback_OFF,
+                SL_Vibration_Feedback_CONSTANT,
+            }
 
             /// <summary>
             /// 发送VMC命令
             /// </summary>
             /// <param name="cmd">命令</param>
+            /// <param name="data">字节 命令对应的参数</param>
+            public bool SendVMCCommand(VMCCommandType cmd, byte data)
+            {
+                return hidMangager.SendOutputReport(ReportId.VMC_REPORT_ID, [(byte)cmd, data]);
+            }
+            /// <summary>
+            /// 发送VMC命令
+            /// </summary>
+            /// <param name="cmd">命令</param>
             /// <param name="data">字节数组 命令对应的参数</param>
-            public void SendVMCCommand(VMCCommandType cmd, byte[] data)
+            public bool SendVMCCommand(VMCCommandType cmd, byte[] data)
             {
                 byte[] cmdData = new byte[1 + data.Length];
                 cmdData[0] = (byte)cmd;
                 Array.Copy(data, 0, cmdData, 1, data.Length);
-                hidMangager.SendOutputReport(ReportId.VMC_REPORT_ID, cmdData);
+                return hidMangager.SendOutputReport(ReportId.VMC_REPORT_ID, cmdData);
             }
             /// <summary>
             /// 发送VMC命令
@@ -144,7 +161,6 @@ namespace VMC_Lite
                 }
                 catch (Exception ex)
                 {
-                    // 记录错误信息，便于调试
                     Debug.WriteLine("Error in SendVMCCommand: " + ex.Message);
                     return false;
                 }
@@ -190,6 +206,12 @@ namespace VMC_Lite
                     SendVMCCommand(VMCCommandType.cmd_steering_wheel_software_limiter_set_ki, Properties.Settings.Default.Steering_Wheel_Software_Limiter_Ki);
                     SendVMCCommand(VMCCommandType.cmd_steering_wheel_software_limiter_set_kd, Properties.Settings.Default.Steering_Wheel_Software_Limiter_Kd);
                     SendVMCCommand(VMCCommandType.cmd_pwm_global_parameters_set_pwm_gain_multiple, Properties.Settings.Default.PWM_Gain_Multiple_Value);
+                    SendVMCCommand(
+                        VMCCommandType.cmd_steering_wheel_software_limiter_set_vibration_feedback_enable,
+                        Convert.ToByte(Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Enabled));
+                    SendVMCCommand(
+                        VMCCommandType.cmd_steering_wheel_software_limiter_set_vibration_feedback_delay,
+                        Convert.ToByte(Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Delay));
                 }
             }
         }

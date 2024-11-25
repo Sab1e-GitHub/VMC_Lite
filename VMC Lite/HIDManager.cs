@@ -60,7 +60,8 @@ namespace VMC_Lite
         {
             if (_hidDevice == null)
             {
-                throw new InvalidOperationException("HID 设备未连接");
+                //throw new InvalidOperationException("HID 设备未连接");
+                return false;
             }
 
             // HID 报告的长度（包括报告 ID），通常由设备定义

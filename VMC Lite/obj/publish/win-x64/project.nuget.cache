@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yD8fVeqo9GU=",
+  "dgSpecHash": "5c42lRfA8aw=",
   "success": true,
-  "projectFilePath": "D:\\WorkSpace\\#GitHubRepository\\VMC\\VMC_Software\\VMC_Lite\\VMC Lite\\VMC Lite.csproj",
+  "projectFilePath": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\VMC Lite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20854\\.nuget\\packages\\extended.wpf.toolkit\\4.6.1\\extended.wpf.toolkit.4.6.1.nupkg.sha512",
     "C:\\Users\\20854\\.nuget\\packages\\hidlibrary\\3.3.40\\hidlibrary.3.3.40.nupkg.sha512",
