@@ -39,10 +39,10 @@ namespace VMC_Lite
             }
             public class ReportId
             {
-                public const byte PID_DEVICE_CONTROL_REPORT_ID = 0x0B;
-                public const byte VMC_REPORT_ID = 0x64;
-                public const byte INPUT_REPORT_ID = 0x03;
-                public const byte VMC_RESPONDING_REPORT_ID = 0x65;
+                public const byte PID_DEVICE_CONTROL_REPORT_ID = 0x33;
+                public const byte VMC_REPORT_ID = 0x60;
+                public const byte INPUT_REPORT_ID = 0x01;
+                public const byte VMC_RESPONDING_REPORT_ID = 0x61;
             }
             public bool Initialized = false;
             public enum VMCCommandType

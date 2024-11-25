@@ -427,11 +427,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WorkSpace\\#GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\VMC Lite.csproj",
+      "projectUniqueName": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\VMC Lite.csproj",
       "projectName": "VMC Lite",
-      "projectPath": "D:\\WorkSpace\\#GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\VMC Lite.csproj",
+      "projectPath": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\VMC Lite.csproj",
       "packagesPath": "C:\\Users\\20854\\.nuget\\packages\\",
-      "outputPath": "D:\\WorkSpace\\#GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\obj\\",
+      "outputPath": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
