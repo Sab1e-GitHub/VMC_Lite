@@ -211,7 +211,7 @@ namespace VMC_Lite
                         Convert.ToByte(Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Enabled));
                     SendVMCCommand(
                         VMCCommandType.cmd_steering_wheel_software_limiter_set_vibration_feedback_delay,
-                        Convert.ToByte(Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Delay));
+                        Convert.ToUInt16(Properties.Settings.Default.Steering_Wheel_Vibration_Feedback_Delay));
                 }
             }
         }
