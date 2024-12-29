@@ -248,7 +248,7 @@ namespace VMC_Lite
             {
 
                 public const UInt16 Vid = 0x1234;
-                public const UInt16 Pid = 0x0065;
+                public const UInt16 Pid = 0x0001;
                 public const string FirmwareVersion = "1.0";
                 public const byte LedNumber = 8;
             }
@@ -553,7 +553,7 @@ namespace VMC_Lite
                                         currentLight = ETS2Telemetry.IsLightsParking();
                                         if (ETS2Telemetry.IsLightsParking())
                                         {
-                                            SetLedBrightness((byte)(Properties.Settings.Default.Led_Brightness > (255 - 20) ? 255 : Properties.Settings.Default.Led_Brightness + 20));
+                                            SetLedBrightness((byte)(Properties.Settings.Default.Led_Brightness > (255 - 1) ? 255 : Properties.Settings.Default.Led_Brightness + 1));
                                         }
                                         else
                                         {

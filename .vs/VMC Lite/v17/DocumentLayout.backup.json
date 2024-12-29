@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|solutionrelative:vmc lite\\hidmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|d:\\workspace\\githubrepository\\submodule\\vmc_lite\\vmc lite\\hidwatchermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|solutionrelative:vmc lite\\hidwatchermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|d:\\workspace\\githubrepository\\submodule\\vmc_lite\\vmc lite\\vmcdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|solutionrelative:vmc lite\\vmcdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|d:\\workspace\\githubrepository\\submodule\\vmc_lite\\vmc lite\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|solutionrelative:vmc lite\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|d:\\workspace\\githubrepository\\submodule\\vmc_lite\\vmc lite\\vmcdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|solutionrelative:vmc lite\\vmcdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|d:\\workspace\\githubrepository\\submodule\\vmc_lite\\vmc lite\\hidwatchermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|solutionrelative:vmc lite\\hidwatchermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30501817-BA90-4796-80D7-C6AC46F6FC5D}|VMC Lite\\VMC Lite.csproj|d:\\workspace\\githubrepository\\submodule\\vmc_lite\\vmc lite\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -35,16 +35,20 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         },
         {
-          "DockedWidth": 115,
+          "DockedWidth": 75,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HIDWatcherManager.cs",
               "DocumentMoniker": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\HIDWatcherManager.cs",
               "RelativeDocumentMoniker": "VMC Lite\\HIDWatcherManager.cs",
@@ -52,8 +56,7 @@
               "RelativeToolTip": "VMC Lite\\HIDWatcherManager.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAA5wEwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T16:53:54.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T16:53:54.349Z"
             },
             {
               "$type": "Document",
@@ -63,7 +66,7 @@
               "RelativeDocumentMoniker": "VMC Lite\\HIDManager.cs",
               "ToolTip": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\HIDManager.cs",
               "RelativeToolTip": "VMC Lite\\HIDManager.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAD4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAD4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T16:43:59.499Z",
               "EditorCaption": ""
@@ -71,18 +74,18 @@
           ]
         },
         {
-          "DockedWidth": 145,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 185,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "VMCDevice.cs",
               "DocumentMoniker": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\VMCDevice.cs",
               "RelativeDocumentMoniker": "VMC Lite\\VMCDevice.cs",
               "ToolTip": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\VMCDevice.cs",
               "RelativeToolTip": "VMC Lite\\VMCDevice.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAIwMoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAAAPoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T09:44:53.715Z",
               "IsPinned": true,
@@ -96,10 +99,9 @@
               "RelativeDocumentMoniker": "VMC Lite\\MainWindow.xaml.cs",
               "ToolTip": "D:\\WorkSpace\\GitHubRepository\\SubModule\\VMC_Lite\\VMC Lite\\MainWindow.xaml.cs",
               "RelativeToolTip": "VMC Lite\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA3wB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T06:12:17.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T06:12:17.397Z"
             },
             {
               "$type": "Document",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VMC Lite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.3")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+deb386728197d847ff09eeb9e89f74b45c135632")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c776d67ac0a64aefd6626daaacb488d05320dcec")]
 [assembly: System.Reflection.AssemblyProductAttribute("VMC Lite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VMC Lite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.3")]
